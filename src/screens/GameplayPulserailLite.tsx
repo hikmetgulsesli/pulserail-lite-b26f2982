@@ -136,9 +136,9 @@ export function GameplayPulserailLite({ actions, runtime }: GameplayPulserailLit
       <footer className="fixed bottom-0 left-0 w-full z-30 flex justify-between items-center px-margin-mobile py-2 pointer-events-none bg-transparent font-label-caps text-label-caps md:pl-[calc(16rem+40px)]">
       <div className="text-on-surface">© 2024 PULSERAIL_OS // VER 2.0.4</div>
       <div className="flex gap-4">
-      <span className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto hover:underline">[P] PAUSE</span>
-      <span className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto">[R] RESET</span>
-      <span className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto">[M] MUTE</span>
+      <button className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto hover:underline bg-transparent border-0 font-label-caps text-label-caps" type="button" data-action-id="pause-game" onClick={actions?.["start-game-2"]}>[P] PAUSE</button>
+      <button className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto bg-transparent border-0 font-label-caps text-label-caps" type="button" data-action-id="reset-game" onClick={actions?.["restart-3"]}>[R] RESET</button>
+      <button className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto bg-transparent border-0 font-label-caps text-label-caps" type="button" data-action-id="mute-game" onClick={actions?.["overdrive-1"]}>[M] MUTE</button>
       </div>
       </footer>
     </>
