@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Game Settings - PulseRail Lite</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Sora:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#520049",
+                    "on-surface": "#dce4e4",
+                    "surface-bright": "#333b3b",
+                    "error": "#ffb4ab",
+                    "surface-tint": "#00dbe7",
+                    "secondary-fixed-dim": "#fface8",
+                    "primary-fixed": "#74f5ff",
+                    "on-tertiary": "#053900",
+                    "tertiary": "#e4ffd6",
+                    "on-primary-fixed": "#002022",
+                    "on-secondary": "#5e0053",
+                    "surface-variant": "#2e3637",
+                    "secondary": "#fface8",
+                    "on-primary-fixed-variant": "#004f54",
+                    "primary": "#e1fdff",
+                    "primary-fixed-dim": "#00dbe7",
+                    "on-error": "#690005",
+                    "primary-container": "#00f2ff",
+                    "on-surface-variant": "#b9cacb",
+                    "surface-container-lowest": "#080f10",
+                    "tertiary-fixed": "#79ff5b",
+                    "inverse-surface": "#dce4e4",
+                    "surface-dim": "#0d1515",
+                    "surface-container-high": "#232b2c",
+                    "on-error-container": "#ffdad6",
+                    "on-tertiary-fixed-variant": "#095300",
+                    "on-tertiary-fixed": "#022100",
+                    "surface-container-highest": "#2e3637",
+                    "on-background": "#dce4e4",
+                    "tertiary-container": "#34fc0d",
+                    "on-primary": "#00363a",
+                    "surface-container-low": "#151d1e",
+                    "secondary-container": "#ff24e4",
+                    "background": "#0d1515",
+                    "secondary-fixed": "#ffd7f0",
+                    "tertiary-fixed-dim": "#2ae500",
+                    "outline-variant": "#3a494b",
+                    "on-primary-container": "#006a71",
+                    "inverse-on-surface": "#2a3232",
+                    "surface-container": "#192122",
+                    "inverse-primary": "#00696f",
+                    "on-secondary-fixed": "#3a0033",
+                    "on-secondary-fixed-variant": "#840076",
+                    "outline": "#849495",
+                    "on-tertiary-container": "#106f00",
+                    "error-container": "#93000a",
+                    "surface": "#0d1515"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "unit": "4px",
+                    "margin-mobile": "16px",
+                    "gutter": "16px",
+                    "margin-desktop": "40px",
+                    "container-max": "1200px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Sora"],
+                    "label-caps": ["JetBrains Mono"],
+                    "headline-md": ["Sora"],
+                    "body-md": ["JetBrains Mono"],
+                    "body-lg": ["JetBrains Mono"],
+                    "display-lg-mobile": ["Sora"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "800"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.15em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .cyber-grid {
+            background-image: 
+                linear-gradient(to right, rgba(0, 219, 231, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 219, 231, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        .neon-bloom-primary {
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.3), inset 0 0 5px rgba(0, 242, 255, 0.2);
+        }
+        .neon-bloom-secondary {
+            box-shadow: 0 0 15px rgba(255, 36, 228, 0.3), inset 0 0 5px rgba(255, 36, 228, 0.2);
+        }
+        .glitch-overlay {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: repeating-linear-gradient(
+                0deg,
+                rgba(0,0,0,0.15) 0px,
+                rgba(0,0,0,0.15) 1px,
+                transparent 1px,
+                transparent 2px
+            );
+            pointer-events: none;
+        }
+        /* Custom ranges for difficulty */
+        input[type=range] {
+            -webkit-appearance: none;
+            width: 100%;
+            background: transparent;
+        }
+        input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 20px;
+            width: 8px;
+            background: #e1fdff;
+            cursor: pointer;
+            box-shadow: 0 0 10px #00f2ff;
+            margin-top: -8px;
+        }
+        input[type=range]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            cursor: pointer;
+            background: #2e3637;
+            border: 1px solid #3a494b;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md h-screen w-screen overflow-hidden relative">
+<!-- Gameplay Background Simulation -->
+<div class="absolute inset-0 z-0 bg-center bg-cover blur-md scale-105" data-alt="A high-speed, futuristic cyberpunk highway at night. Blazing neon streaks of cyan and magenta blur past the viewer, simulating intense forward momentum. The asphalt is slick and dark, reflecting the synthetic glow of distant megacity structures. The mood is adrenaline-fueled, energetic, and heavily stylized with a dark, vaporwave aesthetic. Deep obsidian voids contrast with high-luminance kinetic energy lines." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDWiegopzZSU1W89iXZ3zvNoH177XU7O407rtbiqDoJXmF9MFxfh_U1KzQCI7dKoupU5cxeknGQ47Uj8Hi6Ii6KSNOvBge36K1XM4aFWZdQDA1GIMzNAvzg7MtMDUXI_Xe74xd3g_O2Uk8QtHFlYSUYqaXbZFA-VHYWpj32cf9h7v5U_e3xkbIhkbhIBq2C8G2BVznxgP-WPeiiGP4iLIzCjE3g4freGqcBBaGNoQecHioq3KBq5ib-x-iesis6bStiYhISKxf-8uc');">
+</div>
+<!-- Main Overlay Container -->
+<div class="absolute inset-0 z-10 flex items-center justify-center p-margin-mobile md:p-margin-desktop bg-surface/40 backdrop-blur-sm">
+<!-- Settings Panel -->
+<main class="relative w-full max-w-2xl bg-surface-dim/80 backdrop-blur-xl border border-primary/30 shadow-[0_0_30px_rgba(0,219,231,0.1)] rounded p-6 md:p-8 flex flex-col gap-8 cyber-grid">
+<div class="glitch-overlay opacity-30"></div>
+<!-- Header -->
+<header class="flex justify-between items-start relative z-20 border-b border-primary/20 pb-4">
+<div>
+<h1 class="font-headline-md text-headline-md text-primary tracking-wider drop-shadow-[0_0_8px_rgba(0,219,231,0.5)]">SYSTEM_CONFIG</h1>
+<p class="font-label-caps text-label-caps text-on-surface-variant mt-1">PULSERAIL LITE // OVERRIDE PROTOCOL</p>
+</div>
+<button aria-label="Return to Game" class="text-on-surface-variant hover:text-primary transition-colors duration-300">
+<span class="material-symbols-outlined text-[32px]">close</span>
+</button>
+</header>
+<!-- Settings Content -->
+<div class="flex flex-col gap-8 relative z-20 overflow-y-auto pr-2 custom-scrollbar">
+<!-- Difficulty -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">speed</span>
+<h2 class="font-label-caps text-label-caps text-secondary tracking-widest">KINETIC_VELOCITY</h2>
+</div>
+<div class="bg-surface/50 border border-outline-variant p-4 rounded neon-bloom-primary">
+<div class="flex justify-between font-label-caps text-label-caps text-on-surface mb-4">
+<span class="opacity-50">Slow</span>
+<span class="text-primary font-bold">Standard</span>
+<span class="text-secondary drop-shadow-[0_0_5px_rgba(255,36,228,0.8)]">Overdrive</span>
+</div>
+<div class="relative">
+<input class="w-full" max="3" min="1" type="range" value="2"/>
+<!-- Segment markers -->
+<div class="absolute top-1/2 left-0 w-full flex justify-between px-1 pointer-events-none -translate-y-1/2">
+<div class="w-1 h-3 bg-primary/50"></div>
+<div class="w-1 h-3 bg-primary"></div>
+<div class="w-1 h-3 bg-secondary/80"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Audio -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-primary text-[20px]">graphic_eq</span>
+<h2 class="font-label-caps text-label-caps text-primary tracking-widest">AUDIO_TELEMETRY</h2>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<!-- Music Toggle -->
+<div class="bg-surface/50 border border-outline-variant p-3 flex justify-between items-center hover:border-primary/50 transition-colors cursor-pointer group">
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Music</span>
+<button class="relative inline-flex h-6 w-11 items-center rounded-full bg-primary-container/20 border border-primary">
+<span class="translate-x-6 inline-block h-4 w-4 transform rounded-full bg-primary shadow-[0_0_10px_#00f2ff] transition"></span>
+</button>
+</div>
+<!-- SFX Toggle -->
+<div class="bg-surface/50 border border-outline-variant p-3 flex justify-between items-center hover:border-primary/50 transition-colors cursor-pointer group">
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">SFX</span>
+<button class="relative inline-flex h-6 w-11 items-center rounded-full bg-primary-container/20 border border-primary">
+<span class="translate-x-6 inline-block h-4 w-4 transform rounded-full bg-primary shadow-[0_0_10px_#00f2ff] transition"></span>
+</button>
+</div>
+</div>
+</section>
+<!-- Controls Help -->
+<section class="space-y-4">
+<div class="flex items-center gap-2 mb-2">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">keyboard</span>
+<h2 class="font-label-caps text-label-caps text-tertiary-container tracking-widest">INPUT_MATRIX</h2>
+</div>
+<div class="bg-surface/30 border border-outline-variant p-4 rounded grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex items-center gap-3">
+<div class="flex gap-1">
+<kbd class="bg-surface-container-high border border-outline-variant text-on-surface font-label-caps px-2 py-1 rounded min-w-[24px] text-center shadow-inner">A</kbd>
+<span class="text-on-surface-variant">/</span>
+<kbd class="bg-surface-container-high border border-outline-variant text-on-surface font-label-caps px-2 py-1 rounded min-w-[24px] text-center shadow-inner">D</kbd>
+</div>
+<span class="font-body-md text-on-surface-variant text-sm">Switch Rails</span>
+</div>
+<div class="flex items-center gap-3">
+<kbd class="bg-surface-container-high border border-primary/50 text-primary font-label-caps px-4 py-1 rounded shadow-[inset_0_0_8px_rgba(0,219,231,0.2)] text-center">SPACE</kbd>
+<span class="font-body-md text-on-surface-variant text-sm">Pulse Boost</span>
+</div>
+<div class="flex items-center gap-3">
+<kbd class="bg-surface-container-high border border-outline-variant text-on-surface font-label-caps px-2 py-1 rounded min-w-[24px] text-center shadow-inner">P</kbd>
+<span class="font-body-md text-on-surface-variant text-sm">Pause Protocol</span>
+</div>
+</div>
+</section>
+</div>
+<!-- Footer Actions -->
+<footer class="relative z-20 flex flex-col-reverse md:flex-row justify-between items-center gap-4 pt-6 border-t border-primary/20 mt-4">
+<button class="font-label-caps text-label-caps text-error opacity-70 hover:opacity-100 hover:text-error-container transition-all duration-300 flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+                    Reset Preferences
+                </button>
+<div class="flex gap-4 w-full md:w-auto">
+<button class="flex-1 md:flex-none border border-outline-variant bg-surface-container-low text-on-surface font-label-caps text-label-caps py-3 px-6 rounded hover:bg-surface-container-high transition-colors text-center">
+                        RETURN TO GAME
+                    </button>
+<button class="flex-1 md:flex-none border border-primary bg-primary/10 text-primary font-label-caps text-label-caps py-3 px-6 rounded neon-bloom-primary hover:bg-primary hover:text-on-primary transition-all duration-300 text-center font-bold">
+                        SAVE PREFERENCES
+                    </button>
+</div>
+</footer>
+</main>
+</div>
+</body></html>

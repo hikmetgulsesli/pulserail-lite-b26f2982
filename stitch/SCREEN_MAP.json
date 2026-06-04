@@ -1,0 +1,20 @@
+[
+  {
+    "screenId": "cf33dac7836e411784930bc04f0c1da2",
+    "name": "Gameplay - PulseRail Lite",
+    "type": "game",
+    "description": "Gameplay - PulseRail Lite screen",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "26ea43ce06a64728a19394a6d1d014e9",
+    "name": "Game Settings - PulseRail Lite",
+    "type": "settings",
+    "description": "Game Settings - PulseRail Lite screen",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]

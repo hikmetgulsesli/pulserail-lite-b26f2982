@@ -1,0 +1,720 @@
+{
+  "generatedAt": "2026-06-04T11:29:05.443Z",
+  "screenCount": 2,
+  "screens": {
+    "26ea43ce06a64728a19394a6d1d014e9": {
+      "screenId": "26ea43ce06a64728a19394a6d1d014e9",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "main",
+          "layout": "relative",
+          "classes": [
+            "relative",
+            "w-full",
+            "max-w-2xl",
+            "bg-surface-dim/80",
+            "backdrop-blur-xl",
+            "border",
+            "border-primary/30",
+            "shadow-[0_0_30px_rgba(0,219,231,0.1)]",
+            "rounded",
+            "p-6"
+          ],
+          "childCount": 25
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "Return to Game",
+          "classes": [
+            "text-on-surface-variant",
+            "hover:text-primary",
+            "transition-colors",
+            "duration-300"
+          ],
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Preferences",
+          "classes": [
+            "font-label-caps",
+            "text-label-caps",
+            "text-error",
+            "opacity-70",
+            "hover:opacity-100",
+            "hover:text-error-container",
+            "transition-all",
+            "duration-300",
+            "flex",
+            "items-center",
+            "gap-2"
+          ],
+          "icon": "restart_alt",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "RETURN TO GAME",
+          "classes": [
+            "flex-1",
+            "md:flex-none",
+            "border",
+            "border-outline-variant",
+            "bg-surface-container-low",
+            "text-on-surface",
+            "font-label-caps",
+            "text-label-caps",
+            "py-3",
+            "px-6",
+            "rounded",
+            "hover:bg-surface-container-high",
+            "transition-colors",
+            "text-center"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SAVE PREFERENCES",
+          "classes": [
+            "flex-1",
+            "md:flex-none",
+            "border",
+            "border-primary",
+            "bg-primary/10",
+            "text-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "py-3",
+            "px-6",
+            "rounded",
+            "neon-bloom-primary",
+            "hover:bg-primary",
+            "hover:text-on-primary",
+            "transition-all",
+            "duration-300",
+            "text-center",
+            "font-bold"
+          ],
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        }
+      ],
+      "inputs": [
+        {
+          "kind": "input",
+          "type": "range",
+          "label": "range",
+          "placeholder": "",
+          "name": "",
+          "classes": [
+            "w-full"
+          ],
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "navLinks": [],
+      "cards": [],
+      "icons": [
+        "close",
+        "speed",
+        "graphic_eq",
+        "keyboard",
+        "restart_alt"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "on-secondary-container": "#520049",
+        "on-surface": "#dce4e4",
+        "surface-bright": "#333b3b",
+        "error": "#ffb4ab",
+        "surface-tint": "#00dbe7",
+        "secondary-fixed-dim": "#fface8",
+        "primary-fixed": "#74f5ff",
+        "on-tertiary": "#053900",
+        "tertiary": "#e4ffd6",
+        "on-primary-fixed": "#002022",
+        "on-secondary": "#5e0053",
+        "surface-variant": "#2e3637",
+        "secondary": "#fface8",
+        "on-primary-fixed-variant": "#004f54",
+        "primary": "#e1fdff",
+        "primary-fixed-dim": "#00dbe7",
+        "on-error": "#690005",
+        "primary-container": "#00f2ff",
+        "on-surface-variant": "#b9cacb",
+        "surface-container-lowest": "#080f10",
+        "tertiary-fixed": "#79ff5b",
+        "inverse-surface": "#dce4e4",
+        "surface-dim": "#0d1515",
+        "surface-container-high": "#232b2c",
+        "on-error-container": "#ffdad6",
+        "on-tertiary-fixed-variant": "#095300",
+        "on-tertiary-fixed": "#022100",
+        "surface-container-highest": "#2e3637",
+        "on-background": "#dce4e4",
+        "tertiary-container": "#34fc0d",
+        "on-primary": "#00363a",
+        "surface-container-low": "#151d1e",
+        "secondary-container": "#ff24e4",
+        "background": "#0d1515",
+        "secondary-fixed": "#ffd7f0",
+        "tertiary-fixed-dim": "#2ae500",
+        "outline-variant": "#3a494b",
+        "on-primary-container": "#006a71",
+        "inverse-on-surface": "#2a3232",
+        "surface-container": "#192122",
+        "inverse-primary": "#00696f",
+        "on-secondary-fixed": "#3a0033",
+        "on-secondary-fixed-variant": "#840076",
+        "outline": "#849495",
+        "on-tertiary-container": "#106f00",
+        "error-container": "#93000a",
+        "surface": "#0d1515"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "JetBrains Mono",
+        "Sora"
+      ],
+      "layoutHints": {
+        "gridCols": 2,
+        "flexDirection": "col",
+        "gap": "8"
+      },
+      "behaviorContract": [
+        {
+          "kind": "button",
+          "label": "Return to Game",
+          "icon": "close",
+          "action": "dismiss",
+          "expectedBehavior": "close dialog/panel or return to previous state"
+        },
+        {
+          "kind": "button",
+          "label": "Reset Preferences",
+          "icon": "restart_alt",
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "RETURN TO GAME",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "SAVE PREFERENCES",
+          "icon": null,
+          "action": "form-submit",
+          "expectedBehavior": "validate inputs and submit/apply changes"
+        },
+        {
+          "kind": "input",
+          "label": "range",
+          "type": "range",
+          "placeholder": "",
+          "expectedBehavior": "controlled value with onChange; validation if required by PRD"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "Reset Preferences",
+          "icon": "restart_alt",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "RETURN TO GAME",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "SAVE PREFERENCES",
+          "icon": null,
+          "active": true
+        }
+      ],
+      "title": "Game Settings - PulseRail Lite"
+    },
+    "cf33dac7836e411784930bc04f0c1da2": {
+      "screenId": "cf33dac7836e411784930bc04f0c1da2",
+      "materialSymbolsRequired": true,
+      "sections": [
+        {
+          "tag": "header",
+          "layout": "flex-row",
+          "classes": [
+            "fixed",
+            "top-0",
+            "left-0",
+            "w-full",
+            "z-50",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-margin-mobile",
+            "md:px-margin-desktop"
+          ],
+          "childCount": 2
+        },
+        {
+          "tag": "nav",
+          "layout": "flex-col",
+          "classes": [
+            "fixed",
+            "left-0",
+            "top-0",
+            "h-full",
+            "z-40",
+            "hidden",
+            "md:flex",
+            "flex-col",
+            "py-20",
+            "bg-surface-dim/90"
+          ],
+          "childCount": 7
+        },
+        {
+          "tag": "main",
+          "layout": "flex-col",
+          "classes": [
+            "relative",
+            "w-full",
+            "h-full",
+            "pt-16",
+            "md:pl-64",
+            "flex",
+            "flex-col",
+            "z-20"
+          ],
+          "childCount": 20
+        },
+        {
+          "tag": "footer",
+          "layout": "flex-row",
+          "classes": [
+            "fixed",
+            "bottom-0",
+            "left-0",
+            "w-full",
+            "z-30",
+            "flex",
+            "justify-between",
+            "items-center",
+            "px-margin-mobile",
+            "py-2"
+          ],
+          "childCount": 2
+        }
+      ],
+      "buttons": [
+        {
+          "kind": "button",
+          "label": "OVERDRIVE",
+          "classes": [
+            "w-full",
+            "bg-secondary-container/10",
+            "border",
+            "border-secondary/50",
+            "text-secondary",
+            "font-label-caps",
+            "text-label-caps",
+            "py-3",
+            "px-4",
+            "hover:bg-secondary",
+            "hover:text-on-secondary",
+            "transition-colors",
+            "uppercase",
+            "tracking-widest"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "classes": [
+            "w-full",
+            "py-4",
+            "border",
+            "border-primary",
+            "text-primary",
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase",
+            "hover:bg-primary",
+            "hover:text-on-primary",
+            "transition-all",
+            "duration-300",
+            "hover:shadow-[0_0_20px_rgba(0,242,255,0.6)]",
+            "relative",
+            "group",
+            "overflow-hidden"
+          ],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Restart",
+          "classes": [
+            "w-full",
+            "py-3",
+            "border",
+            "border-outline-variant",
+            "text-on-surface-variant",
+            "font-label-caps",
+            "text-label-caps",
+            "uppercase",
+            "hover:border-secondary",
+            "hover:text-secondary",
+            "transition-all",
+            "duration-300"
+          ],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "classes": [],
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "OPERATOR_01",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "LVL 42 SYNC",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 PULSERAIL_OS // VER 2.0.4",
+          "classes": [],
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "[P] PAUSE [R] RESET [M] MUTE",
+          "classes": [],
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        }
+      ],
+      "inputs": [],
+      "navLinks": [
+        {
+          "kind": "link",
+          "label": "Energy",
+          "href": "#",
+          "classes": [
+            "hidden",
+            "md:block",
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "bolt",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Grid",
+          "href": "#",
+          "classes": [
+            "hidden",
+            "md:block",
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "grid_view",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "sync",
+          "href": "#",
+          "classes": [
+            "hidden",
+            "md:block",
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "sync",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Pulse",
+          "href": "#",
+          "classes": [
+            "hidden",
+            "md:block",
+            "font-label-caps",
+            "text-label-caps"
+          ],
+          "icon": "settings_input_component",
+          "action": "navigate",
+          "expectedBehavior": "navigate:#"
+        }
+      ],
+      "cards": [],
+      "icons": [
+        "sports_esports",
+        "favorite",
+        "bolt",
+        "account_circle",
+        "grid_view",
+        "sync",
+        "settings_input_component"
+      ],
+      "images": [],
+      "cssVars": {},
+      "colorPalette": {
+        "on-secondary-container": "#520049",
+        "on-surface": "#dce4e4",
+        "surface-bright": "#333b3b",
+        "error": "#ffb4ab",
+        "surface-tint": "#00dbe7",
+        "secondary-fixed-dim": "#fface8",
+        "primary-fixed": "#74f5ff",
+        "on-tertiary": "#053900",
+        "tertiary": "#e4ffd6",
+        "on-primary-fixed": "#002022",
+        "on-secondary": "#5e0053",
+        "surface-variant": "#2e3637",
+        "secondary": "#fface8",
+        "on-primary-fixed-variant": "#004f54",
+        "primary": "#e1fdff",
+        "primary-fixed-dim": "#00dbe7",
+        "on-error": "#690005",
+        "primary-container": "#00f2ff",
+        "on-surface-variant": "#b9cacb",
+        "surface-container-lowest": "#080f10",
+        "tertiary-fixed": "#79ff5b",
+        "inverse-surface": "#dce4e4",
+        "surface-dim": "#0d1515",
+        "surface-container-high": "#232b2c",
+        "on-error-container": "#ffdad6",
+        "on-tertiary-fixed-variant": "#095300",
+        "on-tertiary-fixed": "#022100",
+        "surface-container-highest": "#2e3637",
+        "on-background": "#dce4e4",
+        "tertiary-container": "#34fc0d",
+        "on-primary": "#00363a",
+        "surface-container-low": "#151d1e",
+        "secondary-container": "#ff24e4",
+        "background": "#0d1515",
+        "secondary-fixed": "#ffd7f0",
+        "tertiary-fixed-dim": "#2ae500",
+        "outline-variant": "#3a494b",
+        "on-primary-container": "#006a71",
+        "inverse-on-surface": "#2a3232",
+        "surface-container": "#192122",
+        "inverse-primary": "#00696f",
+        "on-secondary-fixed": "#3a0033",
+        "on-secondary-fixed-variant": "#840076",
+        "outline": "#849495",
+        "on-tertiary-container": "#106f00",
+        "error-container": "#93000a",
+        "surface": "#0d1515"
+      },
+      "fonts": [
+        "Material Symbols Outlined",
+        "JetBrains Mono",
+        "Sora"
+      ],
+      "layoutHints": {
+        "flexDirection": "col",
+        "gap": "4"
+      },
+      "behaviorContract": [
+        {
+          "kind": "link",
+          "label": "Energy",
+          "icon": "bolt",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Grid",
+          "icon": "grid_view",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "sync",
+          "icon": "sync",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "link",
+          "label": "Pulse",
+          "icon": "settings_input_component",
+          "route": "#",
+          "expectedBehavior": "navigate:#"
+        },
+        {
+          "kind": "button",
+          "label": "OVERDRIVE",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Start Game",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "Restart",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        },
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "OPERATOR_01",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "LVL 42 SYNC",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 PULSERAIL_OS // VER 2.0.4",
+          "icon": null,
+          "action": "click-action",
+          "expectedBehavior": "produce visible DOM/state/URL feedback; never empty onClick"
+        },
+        {
+          "kind": "button",
+          "label": "[P] PAUSE [R] RESET [M] MUTE",
+          "icon": null,
+          "action": "reset",
+          "expectedBehavior": "reset visible value/state, with confirmation if destructive"
+        }
+      ],
+      "tabBar": [
+        {
+          "kind": "button",
+          "label": "account_circle",
+          "icon": "account_circle",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "OPERATOR_01",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "LVL 42 SYNC",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Energy",
+          "icon": "bolt",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Grid",
+          "icon": "grid_view",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "sync",
+          "icon": "sync",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "link",
+          "label": "Pulse",
+          "icon": "settings_input_component",
+          "route": "#",
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "OVERDRIVE",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "© 2024 PULSERAIL_OS // VER 2.0.4",
+          "icon": null,
+          "active": false
+        },
+        {
+          "kind": "button",
+          "label": "[P] PAUSE [R] RESET [M] MUTE",
+          "icon": null,
+          "active": true
+        }
+      ],
+      "title": "Gameplay - PulseRail Lite"
+    }
+  }
+}

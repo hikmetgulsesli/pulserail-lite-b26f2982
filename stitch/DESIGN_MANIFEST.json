@@ -1,0 +1,24 @@
+[
+  {
+    "screenId": "cf33dac7836e411784930bc04f0c1da2",
+    "title": "Gameplay - PulseRail Lite",
+    "htmlFile": "cf33dac7836e411784930bc04f0c1da2.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzJiYTBjNmVkMjBmOTRjZmU4NGFkNTNiOGExYWNkNjViEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMyODkxNjczODI3NDI3NDg5OTU4&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/pulserail-lite-b26f2982/stitch/cf33dac7836e411784930bc04f0c1da2.html",
+    "surfaceIds": [
+      "SURF_GAMEPLAY"
+    ]
+  },
+  {
+    "screenId": "26ea43ce06a64728a19394a6d1d014e9",
+    "title": "Game Settings - PulseRail Lite",
+    "htmlFile": "26ea43ce06a64728a19394a6d1d014e9.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzI0ZWZhZmEzN2YxOTRhYTdiMGMyMmZlOGQzY2RlNTA1EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMyODkxNjczODI3NDI3NDg5OTU4&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/pulserail-lite-b26f2982/stitch/26ea43ce06a64728a19394a6d1d014e9.html",
+    "surfaceIds": [
+      "SURF_GAME_SETTINGS"
+    ]
+  }
+]
