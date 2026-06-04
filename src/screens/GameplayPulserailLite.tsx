@@ -101,7 +101,7 @@ export function GameplayPulserailLite({ actions, runtime }: GameplayPulserailLit
       {/* Gameplay Area (3D Grid) */}
       <div className="flex-1 relative w-full h-full overflow-hidden flex items-center justify-center perspective-container">
       {/* The 3D Grid */}
-      <div className="w-[200%] h-[200%] absolute bottom-[-50%] left-[-50%] grid-perspective pointer-events-none border-t border-primary/20">
+      <div className="absolute inset-0 grid-perspective pointer-events-none border-t border-primary/20">
       {/* Grid Lines */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(0,219,231,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(0,219,231,0.1)_1px,transparent_1px)] bg-[size:50px_50px]"></div>
       {/* Rails and Pulses */}
