@@ -10,7 +10,7 @@
 import { Bolt, CircleUserRound, Gamepad2, Grid3X3, Heart, RefreshCw, SlidersHorizontal } from "lucide-react";
 
 
-export type GameplayPulserailLiteActionId = "overdrive-1" | "start-game-2" | "restart-3" | "energy-1" | "grid-2" | "sync-3" | "pulse-4";
+export type GameplayPulserailLiteActionId = "overdrive-1" | "start-game-2" | "restart-3" | "energy-1" | "grid-2" | "sync-3" | "pulse-4" | "pause-1" | "reset-1" | "mute-1";
 
 export interface GameplayPulserailLiteProps {
   actions?: Partial<Record<GameplayPulserailLiteActionId, () => void>>;
@@ -136,9 +136,9 @@ export function GameplayPulserailLite({ actions, runtime }: GameplayPulserailLit
       <footer className="fixed bottom-0 left-0 w-full z-30 flex justify-between items-center px-margin-mobile py-2 pointer-events-none bg-transparent font-label-caps text-label-caps md:pl-[calc(16rem+40px)]">
       <div className="text-on-surface">© 2024 PULSERAIL_OS // VER 2.0.4</div>
       <div className="flex gap-4">
-      <span className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto hover:underline">[P] PAUSE</span>
-      <span className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto">[R] RESET</span>
-      <span className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto">[M] MUTE</span>
+      <button className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto hover:underline bg-transparent border-none" type="button" data-action-id="pause-1" onClick={actions?.["pause-1"]}>[P] PAUSE</button>
+      <button className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto bg-transparent border-none" type="button" data-action-id="reset-1" onClick={actions?.["reset-1"]}>[R] RESET</button>
+      <button className="text-on-surface-variant/50 hover:text-primary transition-colors cursor-pointer pointer-events-auto bg-transparent border-none" type="button" data-action-id="mute-1" onClick={actions?.["mute-1"]}>[M] MUTE</button>
       </div>
       </footer>
     </>

@@ -27,6 +27,10 @@ export default function App() {
       "grid-2": () => {},
       "sync-3": () => {},
       "pulse-4": () => {},
+      "pause-1": () => runtimeRef.current.repo.dispatch({ type: "TOGGLE_PAUSE" }),
+      "reset-1": () => runtimeRef.current.repo.dispatch({ type: "RESTART" }),
+      "mute-1": () => {},
+
     }),
     []
   );
