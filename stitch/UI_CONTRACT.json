@@ -1,0 +1,164 @@
+[
+  {
+    "screenId": "cf33dac7836e411784930bc04f0c1da2",
+    "screenTitle": "Gameplay - PulseRail Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Energy",
+        "href": "#",
+        "line": 232
+      },
+      {
+        "type": "link",
+        "label": "Grid",
+        "href": "#",
+        "line": 236
+      },
+      {
+        "type": "link",
+        "label": "sync",
+        "href": "#",
+        "line": 240
+      },
+      {
+        "type": "link",
+        "label": "Pulse",
+        "href": "#",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "OVERDRIVE",
+        "line": 250
+      },
+      {
+        "type": "button",
+        "label": "Start Game",
+        "line": 306
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 310
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Energy",
+        "href": "#",
+        "line": 232
+      },
+      {
+        "type": "link",
+        "label": "Grid",
+        "href": "#",
+        "line": 236
+      },
+      {
+        "type": "link",
+        "label": "sync",
+        "href": "#",
+        "line": 240
+      },
+      {
+        "type": "link",
+        "label": "Pulse",
+        "href": "#",
+        "line": 244
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "OVERDRIVE",
+        "line": 250
+      },
+      {
+        "type": "button",
+        "label": "Start Game",
+        "line": 306
+      },
+      {
+        "type": "button",
+        "label": "Restart",
+        "line": 310
+      }
+    ],
+    "inputs": [],
+    "hardcodedData": [],
+    "totalInteractive": 7,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "26ea43ce06a64728a19394a6d1d014e9",
+    "screenTitle": "Game Settings - PulseRail Lite",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Return to Game",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "Reset Preferences",
+        "line": 242
+      },
+      {
+        "type": "button",
+        "label": "RETURN TO GAME",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "SAVE PREFERENCES",
+        "line": 250
+      },
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 181
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Return to Game",
+        "line": 162
+      },
+      {
+        "type": "button",
+        "label": "Reset Preferences",
+        "line": 242
+      },
+      {
+        "type": "button",
+        "label": "RETURN TO GAME",
+        "line": 247
+      },
+      {
+        "type": "button",
+        "label": "SAVE PREFERENCES",
+        "line": 250
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "range",
+        "inputType": "range",
+        "line": 181
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 5,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
