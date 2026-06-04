@@ -1,0 +1,106 @@
+[
+  {
+    "screenId": "cf33dac7836e411784930bc04f0c1da2",
+    "title": "Gameplay - PulseRail Lite",
+    "componentName": "GameplayPulserailLite",
+    "file": "src/screens/GameplayPulserailLite.tsx",
+    "buttons": 3,
+    "inputs": 0,
+    "links": 4,
+    "actions": [
+      {
+        "id": "overdrive-1",
+        "kind": "button",
+        "label": "OVERDRIVE",
+        "index": 0
+      },
+      {
+        "id": "start-game-2",
+        "kind": "button",
+        "label": "Start Game",
+        "index": 1
+      },
+      {
+        "id": "restart-3",
+        "kind": "button",
+        "label": "Restart",
+        "index": 2
+      },
+      {
+        "id": "energy-1",
+        "kind": "link",
+        "label": "Energy",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "grid-2",
+        "kind": "link",
+        "label": "Grid",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "sync-3",
+        "kind": "link",
+        "label": "Sync",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "pulse-4",
+        "kind": "link",
+        "label": "Pulse",
+        "href": "#",
+        "index": 3
+      }
+    ]
+  },
+  {
+    "screenId": "26ea43ce06a64728a19394a6d1d014e9",
+    "title": "Game Settings - PulseRail Lite",
+    "componentName": "GameSettingsPulserailLite",
+    "file": "src/screens/GameSettingsPulserailLite.tsx",
+    "buttons": 6,
+    "inputs": 1,
+    "links": 0,
+    "actions": [
+      {
+        "id": "return-to-game-1",
+        "kind": "button",
+        "label": "Return to Game",
+        "index": 0
+      },
+      {
+        "id": "button-2-2",
+        "kind": "button",
+        "label": "Button 2",
+        "index": 1
+      },
+      {
+        "id": "button-3-3",
+        "kind": "button",
+        "label": "Button 3",
+        "index": 2
+      },
+      {
+        "id": "reset-preferences-4",
+        "kind": "button",
+        "label": "Reset Preferences",
+        "index": 3
+      },
+      {
+        "id": "return-to-game-5",
+        "kind": "button",
+        "label": "RETURN TO GAME",
+        "index": 4
+      },
+      {
+        "id": "save-preferences-6",
+        "kind": "button",
+        "label": "SAVE PREFERENCES",
+        "index": 5
+      }
+    ]
+  }
+]
